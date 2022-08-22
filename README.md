@@ -1,2 +1,2 @@
-![Ankeet](ankeet.png)
+![Ankeet](images/ankeet.png)
 # Kerge-HTML-vorm
