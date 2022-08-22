@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +12,10 @@
     <h1 style="color:darkorange;">Simple HTML Form</h1>
     <!--Form -->
     <form id="form" action="connection.php" method="post" name="form">
-
         <div class="control-form">
             <label>
                 Email
             </label>
- 
             <!-- Input Type Email-->
             <input type="email"
                    id="email" name="email" maxlength="50"
@@ -30,25 +27,23 @@
             <label>
                 Name
             </label>
- 
             <!-- Input Type Text -->
             <input type="text"
-                   id="name"
+                   id="name" name="name"
                    placeholder="Enter your name" required  oninvalid="this.setCustomValidity('Please enter your name')"
                    oninput="this.setCustomValidity('')" />
         </div>
-  
+
         <div class="control-form">
             <label>
                 Age
             </label>
- 
             <input type="number"
                    id="age" name="age" min="1" max="100"
                    placeholder="Enter your age" required  oninvalid="this.setCustomValidity('Please enter your age')"
                    oninput="this.setCustomValidity('')" />
         </div>
-  
+
         <div class="control-form">
             <label>
                 Choose your role:
@@ -64,15 +59,14 @@
                 <option value="other">Other</option>
             </select>
         </div>
-        <div required id="div2"></div>
+
+        <div required id="div2"></div> <!--Text, that appears when you choose a certain role-->
 
         <div class="control-form" id="div3" style="display:none;">
             <label style="margin-bottom:12px;margin-bottom:12px;">
                 What is your favorite subject?
             </label>
  
-            <!-- Input Type Radio Button -->
-            <label>
                 <input type="radio"
                        id="math"
                        name="favorite_subject" value="math">Math</input>
@@ -103,42 +97,28 @@
             <label style="margin-bottom:12px;margin-top:12px;">
                 What is your favorite color?
             </label>
- 
-            <!-- Input Type Radio Button -->
-            <label>
                 <input type="radio"
                        id="green" 
                        name="favorite_color">Green</input>
-            </label>
-            <label>
                 <input type="radio"
                        id="orange"
                        name="favorite_color">Orange</input>
-            </label>
-            <label>
                 <input type="radio"
                        id="blue" 
                        name="favorite_color">Blue</input>
-            </label>
-            <label>
                 <input type="radio"
                        id="black"
                        name="favorite_color">Black</input>
-            </label>
-            <label>
                 <input type="radio"
                        id="other2"
                        name="favorite_color">Other</input>
-            </label>
-            <label>
                 <input type="radio"
                        id="DontHave"
-                       name="favorite_color">Don't have a favorite color</input>
-            </label>
+                       name="favorite_color">Don't have one</input>
         </div>
 
         <div class="control-form">
-            <label style="margin-bottom:12px;margin-bottom:12px;">Which OS do you prefer? <br>
+            <label style="margin-bottom:12px;margin-top:12px;">Which OS do you prefer? <br>
             </label>
             <label>
                 <input type="radio" required
@@ -173,5 +153,4 @@
     </input>
     </form>
 </body>
-  
 </html>
