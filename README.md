@@ -1,2 +1,2 @@
 ![Ankeet](images/ankeet.png)
-# Kerge-HTML-vorm
+# Kerge-HTML-vorm, mis ühendab php failiga peale ankeedi esitamist.
